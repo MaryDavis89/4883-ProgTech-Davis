@@ -27,6 +27,8 @@ int main() {
       mid = k;
     if(k > m && k < l)
       mid = k;
+    if(k == l && l == m)
+      mid =k;
 
     cout << "Case " << a << ": " << mid << endl;
 
