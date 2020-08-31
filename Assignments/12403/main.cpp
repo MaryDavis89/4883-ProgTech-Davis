@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 
   ifstream infile;
-  infile.open("input2.txt");
+  infile.open("input.txt");
 
 string test;
 int c;
