@@ -1,0 +1,64 @@
+```c++
+#include <iostream>
+using namespace std;
+class tree;
+class Node {
+    friend class tree;
+private:
+    Node *lchild,*rchild;
+    int data;
+public:
+    Node (int x) {
+        data = x;
+        lchild = rchild = NULL;
+    }
+};
+class tree {
+protected:
+    Node* root;
+    void inorder(const Node* root)const;
+public:
+    tree () {
+        root = NULL;
+    }
+    bool insert(int item);
+    void inorder() const {inorder(root);};
+    Node* getroot() {
+        return root;
+    }
+};
+bool tree :: insert(int item) {
+    if (root == NULL) {
+        Node *temp = new Node(item);
+        root = temp;
+        return (bool) root;
+    }
+    if (item < root -> data) {
+        insert(item);
+    }
+    if (item > root -> data) {
+        insert(item);
+    }
+    else if (item == root -> data) {
+        cout<<"Duplicate";
+        exit (0);
+    }
+    return (bool) root;
+}
+void tree :: inorder(const Node *root)const {
+    if (root != NULL) {
+        inorder(root -> lchild);
+        cout<<root -> data;
+        inorder(root -> rchild);
+    }
+}
+int main()
+{
+    tree obj1;
+    obj1.insert(3);
+    //obj1.insert(4);
+    obj1.insert(1);
+    //obj1.insert(5);
+    obj1.inorder();
+}
+```
