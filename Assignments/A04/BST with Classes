@@ -62,3 +62,4 @@ int main()
     obj1.inorder();
 }
 ```
+[Source:](https://stackoverflow.com/questions/44476785/binary-search-tree-using-classes)
