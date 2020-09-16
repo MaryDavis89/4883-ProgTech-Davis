@@ -4,3 +4,4 @@
   - [12347](https://onlinejudge.org/external/123/12347.pdf)
 #### Find multiple ways to implement Binary Search Trees in C++
   -[BST implementation with classes](https://github.com/MaryDavis89/4883-ProgTech-Davis/blob/master/Assignments/A04/BST%20with%20Classes)
+  -[BST implementation with Linked Lists](https://github.com/MaryDavis89/4883-ProgTech-Davis/blob/master/Assignments/A04/BST%20with%20Linked%20Lists)
